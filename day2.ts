@@ -15,7 +15,7 @@ enum Outcome {
   Lost = 0,
 }
 
-const values2: RockPaperScissors[][] = [
+const values: RockPaperScissors[][] = [
   [RockPaperScissors.Rock, RockPaperScissors.Rock],
   [RockPaperScissors.Paper, RockPaperScissors.Rock],
   [RockPaperScissors.Scissors, RockPaperScissors.Rock],
@@ -2573,5 +2573,5 @@ const getTotalScore = (
   return arrayScores.reduce((a, b) => a + b, 0);
 };
 
-console.log("result 1 is:", getTotalScore(values2, true));
-console.log("result 2 is:", getTotalScore(values2, false));
+console.log("result 1 is:", getTotalScore(values, true));
+console.log("result 2 is:", getTotalScore(values, false));
